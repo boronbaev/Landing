@@ -1,0 +1,107 @@
+.container1
+    margin: 0 auto
+    max-width: 1100px
+    padding: 0 rem(10px)
+
+.grid___main
+    text-align: center
+    color: $textColor1
+    max-width: 600px
+
+    +tablet 
+        +flex($main: space-between, $cross: center)
+
+.grid__title
+    font-family: 'Arvo', serif
+
+.grid__text
+    font-family: 'Montserrat', sans-serif
+
+.fa-random
+    color: black
+        
+.post
+    margin: 0
+    padding: 0
+    list-style: none
+    display: grid
+    gap: 1rem
+
+    +tablet 
+        grid-template-columns: repeat(3, 1fr)
+         
+.post__img
+    width: 100%
+    height: 30vh
+    object-fit: cover
+
+.post__item
+    margin: 0
+    padding: 0
+    padding-bottom: 1rem
+    background: var(--post-color)
+    color: var(--text-color1)
+
+
+.post__text__info
+    margin: 0 auto
+    max-width: 310px  
+    padding: 0 rem(10px)
+
+.post__text__info1
+    margin: 0 auto
+    max-width: 690px 
+    padding: 0 rem(10px) 
+
+.post__title 
+    font-size: 15px
+    font-family: 'Arvo', serif
+
+    +laptop
+       font-size: 20px
+    
+.post__text
+    font-size: 13px 
+    font-family: 'Open Sans', sans-serif
+    color: var(--text-color2)
+
+    +laptop
+       font-size: 15px
+        
+.post__details
+    font-family: 'Montserrat', sans-serif
+    font-size: 12px
+    +flex($main: space-between)
+    color: var(--text-color3)
+
+
+.fa-clock
+    color: var(--text-color3)
+
+.fa-eye
+    color: var(--text-color3)
+.post--black
+  --post-color: #000
+  --text-color1: #fff
+  --text-color2: #555
+  --text-color3: #555
+  
+.post--yellow
+  --post-color: yellow 
+  --text-color1: #fff
+  --text-color2:  #fff
+  --text-color3: #fff
+  
+.col-md-2
+
+    +mobile 
+        grid-column: span 2
+
+    +tablet 
+        grid-column: span  2
+
+    +laptop
+        grid-column: span  2
+
+    +desktop
+        grid-column: span 2 

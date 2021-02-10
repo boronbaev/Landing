@@ -1,0 +1,76 @@
+.footer
+    height: 900px
+    background: #202020
+
+    +mobile 
+        height: 700px
+        
+    +tablet
+        height: 400px 
+    
+.navbar
+    margin-top: 30px
+    padding: 0
+    list-style: none
+
+    +mobile 
+       +grid($columns: repeat(2, 1fr))
+
+    +tablet 
+        +grid($columns: repeat(4, 1fr))
+
+.nav__wrap
+ 
+    +flex($wrap: wrap)
+
+    +laptop
+       width: 180px
+
+.nav__column
+
+    +flex($dir: column)
+
+.nav__space-between
+
+    +flex($main: space-between) 
+
+.nav__title
+    font-size: 15px
+    font-family: 'Montserrat', sans-serif
+    font-weight: bold
+    margin-top: 50px
+    margin-left: 10px
+    
+.nav__link1
+    font-family: 'Open Sans', sans-serif
+    text-decoration: none
+    color: $textColor2
+    margin-left: 50px
+    padding-top: 5px
+
+    +tablet 
+        margin-left: 10px
+
+i 
+    color: #fff
+
+hr
+    margin-top: 100px
+
+.footer__logo
+    padding: 0
+    list-style: none
+
+    +tablet 
+       +flex($main: space-between, $cross: center)
+       
+.footer__img
+    margin-left: 10px
+
+.footer__title
+    font-family: 'Montserrat', sans-serif
+    font-weight: bold
+    margin: 0
+    margin-left: 10px
+    padding-top: 10px
+    

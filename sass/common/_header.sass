@@ -1,0 +1,112 @@
+.header
+    background: url(../img/box.png) no-repeat bottom center #8a72b6
+
+    +phone
+        height: 390px
+        background-size: 100%
+    
+    +mobile
+        height: 420px
+
+    +tablet
+        height: 450px
+        
+    +laptop
+        height: 500px 
+
+    +desktop
+        height: 600px
+
+.logo
+    +flex($main: space-between, $cross: center)
+    padding: 15px 15px 
+    
+.nav 
+    +pos-overlay(rgba(#000, 0.7))
+    +flex(center, center, $dir: column)
+    font-family: 'Montserrat', sans-serif
+    top: -100vh
+    height: 100vh
+    bottom: auto
+    transition:  .5s
+
+    +tablet
+      position: static
+      background: unset
+      +flex($dir: row)
+      height: auto
+
+    &.is-active
+        top: 0
+
+    &__link
+        color: $textColor
+        text-decoration: none
+        margin: rem(10px) 0
+
+        +tablet
+          margin: 0 rem(10px)
+          &:last-child
+              margin-right: 0
+
+.hamburger
+    +tablet
+      display: none
+
+.header__text
+    font-family: 'Montserrat', sans-serif
+    +phone
+         font-size: 15px
+
+.header__title
+    font-family: 'Montserrat', sans-serif
+    margin: 0
+    
+    +tablet 
+        font-size: 45px
+        
+    +laptop
+        font-size: 55px
+
+    +desktop
+        font-size: 70px
+
+.header__flex
+    +tablet 
+        +flex($main:space-between)   
+
+
+
+.header__text1
+    font-family: 'Arvo', serif
+    +tablet 
+        padding-top: 60px 
+
+    +laptop
+        padding-top: 75px
+        font-size: 20px
+
+    +desktop
+        padding-top: 130px
+             
+.header__bt
+    background:  #FFC300
+    border: none
+    border-radius: 24px
+    max-width: 135px
+    height: 35px
+
+     
+.header__button
+    +tablet 
+        margin-top: 70px
+
+.header__btn
+    font-family: 'Montserrat', sans-serif
+    font-size: 10px
+    font-weight: bold
+    text-decoration: none
+    color: $textColor1
+
+    +tablet 
+        font-size: 11px
